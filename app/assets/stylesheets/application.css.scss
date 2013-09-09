@@ -21,19 +21,31 @@
 $wieser_green: #004a30;
 $slate_blue:#004a30;
 $white:#ffffff;
+$light_gray:#efefef;
 
 .home-buckets {
-	background-color:white;
+	background-color:$white;
 	border-radius:5px;
 	.span4 {
 		
 	}
+	.span4:first-child {
+
+	}
 	.span4:first-child h1 {
 		text-transform: uppercase;
 		color:$wieser_green;
+		background-color:$light_gray;
+		padding:10px 0 0 10px;
 		display:block;
-		height:140px;
-		padding:0;margin:0;
+		height:130px;
+		margin:0;
+
+		
+	}
+	h3 {
+		font-weight:200;
+		color:$wieser_green;
 	}
 }
 
@@ -44,5 +56,18 @@ footer {margin-top:10px;
 	background-image:url('footer-bg2.gif');
 	background-repeat:no-repeat;
 	background-size:100% auto;
+	li {
+		list-style: none;
+		margin-left:none;
+
+	}
+	#copyright {
+		margin-top:30px;
+		text-align:right;
+	}
+	small {
+		color:darken($white, 50%);
+
+	}
 
 }
