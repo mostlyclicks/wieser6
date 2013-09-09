@@ -49,8 +49,9 @@ $light_gray:#efefef;
 	}
 }
 
-footer {margin-top:10px;
-	padding:30px;
+footer {
+	margin-top:30px;
+	padding:20px;
 	position:relative;
 	color:#fff;
 	background-image:url('footer-bg2.gif');
@@ -69,5 +70,19 @@ footer {margin-top:10px;
 		color:darken($white, 50%);
 
 	}
+	#email-sign-up {
+		background-color:#363535;
+		padding:20px;
+		border-radius:5px;
+	}
+	legend {
+		color:$white;
+		border-bottom:none;
+
+	}
+	label {
+		display:none;
+	}
+	
 
 }
