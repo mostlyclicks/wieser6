@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <%= render '/refinery/html_tag' %>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
 
+
+      
+
+   
+
     <div id="page_container">
+      
+
       <div class="container">
       <header id="header">
         <%= render '/refinery/header' -%>
@@ -14,17 +22,59 @@
     </div><!-- top container -->
 
     <div class="container">
-      <section id="page">
+
+
+
+      <section id="page" >
         <%= yield %>
       </section>
     </div><!-- middle container -->
 
-    <div class="container">
+   
+
+    <div class="container" >
       <footer>
-        <%= render '/refinery/footer' -%>
+        <!-- img src="assets/footer-bg.gif" style="" / -->
+        
+        <div class="row-fluid" style="min-height:400px;">
+          <div class="span4">Email</div>
+          <div class="span2">
+            <ul>
+              <li>Why Wieser Brothers</li>
+              <li>Trust</li>
+              <li>Partnership</li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li>Projects</li>
+              <li>Current Projects</li>
+              <li>Completed Projects</li>
+              <li>Archives</li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li>Services</li>
+              <li>Design/Build</li>
+              <li>Commercial</li>
+              <li>Residential</li>
+              <li>Concrete</li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li>Contact Us</li>
+              <li>News</li>
+              <li>Employment Opportunities</li>
+              <li>Bid Opportnities</li>
+            </ul>
+          </div>
+          <%= render '/refinery/footer' -%>
+        </div>
       </footer>
     </div><!-- footer container -->
-
+   
     </div>
     <%= render '/refinery/javascripts' %>
   </body>

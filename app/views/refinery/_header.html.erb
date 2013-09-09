@@ -1,9 +1,33 @@
+
 <h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
+  <%#= link_to Refinery::Core.site_name, refinery.root_path %>
+  <%#= image_tag 'logo.png', alt: 'Wieser Brothers, General Contractor, Inc.' %>
 </h1>
 
-<%= render(:partial => "/refinery/menu", :locals => {
-			 :roots => refinery_menu('main_menu'),
-             :dom_id => 'menu',
-             :css => 'menu'
-           }) %>
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"
+      style="opacity:.5;margin-top:30px;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+  		<a class="brand" href="#">
+  			<%= image_tag "logo-200.png" %>
+  		</a>
+
+      <div class="nav-collapse collapse">
+  		<%= render(:partial => "/refinery/menu", :locals => {
+  		 :roots => refinery_menu('main_menu'),
+  		 :dom_id => 'menu',
+  		 :css => 'menu',
+
+  		}) %>
+    </div>
+		</div>
+	</div>
+</div>

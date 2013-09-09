@@ -9,8 +9,40 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_variables
+ *=	require twitter-bootstrap-static/bootstrap
  *= require_tree .
 
  */
 
+ html {background:url('home-bg.gif') 0 0 repeat-x #3b3b3b;}
+ body {background-color:#3b3b3b;}
+
+ //colors
+$wieser_green: #004a30;
+$slate_blue:#004a30;
+$white:#ffffff;
+
+.home-buckets {
+	background-color:white;
+	border-radius:5px;
+	.span4 {
+		
+	}
+	.span4:first-child h1 {
+		text-transform: uppercase;
+		color:$wieser_green;
+		display:block;
+		height:140px;
+		padding:0;margin:0;
+	}
+}
+
+footer {margin-top:10px;
+	padding:30px;
+	position:relative;
+	color:#fff;
+	background-image:url('footer-bg2.gif');
+	background-repeat:no-repeat;
+	background-size:100% auto;
+
+}

@@ -1,6 +1,31 @@
 
-//colors
+ //colors
 $wieser_green: #004a30;
 $slate_blue:#004a30;
+$white:#ffffff;
 
 a {color:$wieser_green;}
+
+.navbar-inner {
+	background-image:url('nav-bg.png');
+  background-size:100%;
+  opacity:0.9;
+  border:1px solid $wieser_green;
+ 
+
+	.nav li a {
+		line-height:63px;
+		color:$white;
+		text-shadow:none;
+		font-size:15px;
+		&:hover {
+			color:darken($white, 10%);
+		}
+	}
+}
+
+
+.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus 
+{
+  //background-color:darken($wieser_green, 40%);
+}
