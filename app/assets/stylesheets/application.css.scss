@@ -19,9 +19,26 @@
 
  //colors
 $wieser_green: #004a30;
-$slate_blue:#004a30;
+$slate_blue:#4b7da4;
 $white:#ffffff;
 $light_gray:#efefef;
+
+#quotebox {
+	background-color:$slate_blue;
+	min-height:100px;
+	padding:20px;
+	p {
+		font-family: Times, serif;
+		font-size:18px;
+		line-height:1.25em;
+		font-style: italic;
+	}
+
+	strong {
+		font-style:normal;
+		font-family:sans-serif;
+	}
+}
 
 .home-buckets {
 	background-color:$white;
