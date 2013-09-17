@@ -7,35 +7,39 @@
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
 
-
-      
-
-   
-
     <div id="page_container">
-      
+      <div id="home">
+        <div id="intro">
+          <div class="container">
+            <header id="nav">
+              <%= render '/refinery/header' -%>
+            </header>
+          </div><!-- top container -->
+          
+          <div class="container" style="position:relative;z-index:20;top:0;left:0;">
+            <div class="row-fluid">
+              <div class="span4 offset8" id="quotebox" >
+                <p>We had such a positive experience with Wieser Brothers that we now use them as our general contractor of choice. We ask questions during construction ad know we are getting hones answers and ideas that are in the best interst of our company.</p>
+      <p><strong>Doug Muller, Projects Manager<br />Organic Valley</strong></p>
+              </div>
+            </div>
+          </div>
+          
+          <%= image_tag 'placeholder-hero.jpg', style: 'width:100%;margin-top:-363px;' %>
 
-      <div class="container">
-      <header id="header">
-        <%= render '/refinery/header' -%>
-      </header>
-    </div><!-- top container -->
-
-    <div class="container">
 
 
+        </div>
 
-      <section id="page" >
-        <%= yield %>
-      </section>
-    </div><!-- middle container -->
+        <div class="container">
+          <section id="page" >
+            <%= yield %>
+          </section>
+        </div><!-- middle container -->
 
-   
 
-    <div class="container" >
-      <footer>
-        
-        
+        <footer>
+        <div class="container">
         <div class="row-fluid" style="min-height:250px;">
           <div class="span4" id="email-sign-up">
             <form>
@@ -83,9 +87,26 @@
           </div>
           <%= render '/refinery/footer' -%>
         </div>
+      </div>
       </footer>
+
+
+
+
+      </div>
+      
+
+    
+
+    
+
+   
+      
     </div><!-- footer container -->
    
+
+
+
     </div>
     <%= render '/refinery/javascripts' %>
   </body>

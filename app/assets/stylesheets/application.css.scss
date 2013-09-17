@@ -14,8 +14,8 @@
 
  */
 
- html {background:url('home-bg.gif') 0 0 repeat-x #3b3b3b;}
- body {background-color:#3b3b3b;}
+/* html {background:url('home-bg.gif') 0 0 repeat-x #3b3b3b;}
+ body {background-color:#3b3b3b;}*/
 
  //colors
 $wieser_green: #004a30;
@@ -23,7 +23,35 @@ $slate_blue:#4b7da4;
 $white:#ffffff;
 $light_gray:#efefef;
 
+ html, body {margin:0;padding:0;background-color:#cdcdcd;}
+
+ #home div > div[id] > div {width:940px;border:1px solid black;margin:0 auto;}
+ #intro {position:relative;z-index:0;}
+
+ footer {
+ 	background-color:$light_gray;
+	width:100%;
+ 	padding:30px 0 30px 0;
+ 	background-image:url('footer-bg5.png');
+ 	background-position:right;
+ 	background-repeat:no-repeat;
+
+
+
+ 	#email-sign-up {
+		background-color:#bababa;
+		padding:20px;
+		border-radius:5px;
+	}
+	li {
+		list-style: none;
+		margin-left:none;
+
+	}
+ }
+
 #quotebox {
+	
 	background-color:$slate_blue;
 	min-height:100px;
 	padding:20px;
@@ -67,6 +95,10 @@ $light_gray:#efefef;
 }
 
 footer {
+	
+}
+/*
+footer {
 	margin-top:10px;
 	padding-top:40px;
 	position:relative;
@@ -87,11 +119,7 @@ footer {
 		color:darken($white, 50%);
 
 	}
-	#email-sign-up {
-		background-color:#363535;
-		padding:20px;
-		border-radius:5px;
-	}
+	
 	legend {
 		color:$white;
 		border-bottom:none;
@@ -102,4 +130,4 @@ footer {
 	}
 	
 
-}
+}*/
