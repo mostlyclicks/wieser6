@@ -1,3 +1,9 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-projects (1.0)
+      refinerycms-core (~> 2.0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -204,6 +210,7 @@ DEPENDENCIES
   rails (= 3.2.14)
   refinerycms (~> 2.0.6)
   refinerycms-menus (~> 2.0.7)
+  refinerycms-projects!
   sass-rails (~> 3.2.3)
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
