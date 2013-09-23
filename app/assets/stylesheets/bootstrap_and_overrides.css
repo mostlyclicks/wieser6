@@ -5,3 +5,38 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+
+  /* Large desktop */
+@media (min-width: 1200px) { 
+	body {border:1px solid red;}
+
+ }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	body {border:1px solid green;}
+	.home-buckets .span4:first-child h1 {height:75px;}
+	.home-buckets h1 {font-size:20px;line-height:20px;}
+	.home-buckets h3 {font-size:14px;}
+
+	.home-hero .span4 {width:100% !important;}
+	.home-hero .offset8 {border:1px solid white;min-height:400px;}
+
+	footer legend {font-size:18px;}
+	footer input {width:100%;}
+
+
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	body {border:1px solid blue;}
+	footer .span4 {margin-bottom:20px !important;}
+	footer .span2 {width:50% !important;float:left !important;height:8em;}
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	body {border:1px solid yellow;}
+ }

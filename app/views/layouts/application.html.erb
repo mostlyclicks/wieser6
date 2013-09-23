@@ -9,28 +9,32 @@
 
     <div id="page_container">
       <div id="home">
+
+        <div class="container" style="position:relative;z-index:200;">
+          <header id="nav">
+            <%= render '/refinery/header' -%>
+          </header>
+        </div><!-- top container -->
+
+        <% if @page.home? %>
+
         <div id="intro">
-          <div class="container">
-            <header id="nav">
-              <%= render '/refinery/header' -%>
-            </header>
-          </div><!-- top container -->
-          <% if @page.home? %>
-          <div class="container" style="position:relative;z-index:20;top:0;left:0;">
+          
+          <div class="container home-hero">
             <div class="row-fluid">
               <div class="span4 offset8" id="quotebox" >
-
                 <p>We had such a positive experience with Wieser Brothers that we now use them as our general contractor of choice. We ask questions during construction and know we are getting honest answers and ideas that are in the best interest of our company.</p>
                 <p><strong>Doug Muller, Projects Manager<br />Organic Valley</strong></p>
               </div>
             </div>
           </div>
-          
-          <%= image_tag 'placeholder-hero.jpg', style: 'width:100%;margin-top:-363px;' %>
+          <%= image_tag 'temp_bg.jpg', id: 'big-image' %>
+        </div><!-- intro -->
 
-          <% end %>
-
-        </div>
+        <% end %>
+      </div>
+      
+        
 
         <div class="container">
           <section id="page" >
