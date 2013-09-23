@@ -9,6 +9,23 @@
     <%= f.text_field :title, :class => 'larger widest'  -%>
 
   </div>
+
+  <div class='field'>
+    <%= f.label :project_status -%>
+    <%#= f.text_field :project_status  -%>
+    <%= f.select :project_status, options_for_select([["Current", 1], ["Completed", 2], ["Archived", 3]]) -%>
+
+  </div> 
+
+  <div class='field'>
+    <%= f.label :hero_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hero_image_id,
+               :image => @project.hero_image,
+               :toggle_image_display => false %>
+
+  </div>
   
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
@@ -33,27 +50,15 @@
 
   </div>
   
-  <div class='field'>
+  <div class='field' style="margin-bottom:20px;">
     <%= f.label :pdf_link -%>
     <%= f.text_field :pdf_link  -%>
 
   </div>
   
-  <div class='field'>
-    <%= f.label :hero_image -%>
-    <%= render '/refinery/admin/image_picker',
-               :f => f,
-               :field => :hero_image_id,
-               :image => @project.hero_image,
-               :toggle_image_display => false %>
-
-  </div>
   
-  <div class='field'>
-    <%= f.label :project_status -%>
-    <%= f.text_field :project_status  -%>
-
-  </div>
+  
+  
   
 
   </div>
