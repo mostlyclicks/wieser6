@@ -16,28 +16,22 @@
           </header>
         </div><!-- top container -->
 
-        <% if @page.home? %>
-
-        <div id="intro">
-          
-          <div class="container home-hero">
-            <div class="row-fluid">
-              <div class="span4 offset8" id="quotebox" >
-                <p>We had such a positive experience with Wieser Brothers that we now use them as our general contractor of choice. We ask questions during construction and know we are getting honest answers and ideas that are in the best interest of our company.</p>
-                <p><strong>Doug Muller, Projects Manager<br />Organic Valley</strong></p>
-              </div>
-            </div>
-          </div>
-          <%= image_tag 'temp_bg.jpg', id: 'big-image' %>
-        </div><!-- intro -->
-
-        <% end %>
+       
+       
+        <%= yield :intro %>
+       
       </div>
       
         
 
         <div class="container">
           <section id="page" >
+            
+            
+            <%#= Refinery.extensions %>
+            <%= link_to 'Projects', refinery.projects_projects_path %>
+            <%= link_to 'home', refinery.root_path %>
+            
             <%= yield %>
           </section>
         </div><!-- middle container -->
@@ -96,7 +90,7 @@
       </footer>
 
 
-
+      <%= yield :test %>
 
       </div>
       

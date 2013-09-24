@@ -6,6 +6,8 @@ Wieser6::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   mount Refinery::Core::Engine, :at => '/'
+  #mount Refinery::Projects::Engine => "/projects", :as => "projects"
+  #get "/pages" => "pages#home?"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
