@@ -10,6 +10,7 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :hero_image, :class_name => '::Refinery::Image'
+      has_many_page_images
     end
   end
 end

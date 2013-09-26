@@ -42,3 +42,4 @@ gem 'jquery-rails', '~> 2.0.0'
 # gem 'debugger'
 
 gem 'refinerycms-projects', :path => 'vendor/extensions'
+gem 'refinerycms-page-images', '~> 2.0.0'

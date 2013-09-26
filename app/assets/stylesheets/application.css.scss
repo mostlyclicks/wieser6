@@ -82,6 +82,7 @@ $light_gray:#efefef;
 	background-color:$slate_blue;
 	min-height:100px;
 	padding:20px;
+	border-radius:3px;
 	p {
 		font-family: Times, serif;
 		font-size:18px;
@@ -97,6 +98,7 @@ $light_gray:#efefef;
 
 #l2-main {
 	min-height:500px;
+	margin-top:40px;
 }
 
 .home-buckets {
