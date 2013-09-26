@@ -23,6 +23,8 @@ $slate_blue:#4b7da4;
 $white:#ffffff;
 $light_gray:#efefef;
 
+.red-border {border:1px solid red;}
+
  html, body {margin:0;padding:0;background-color:$light_gray;}
 
  //#home div > div[id] > div {width:940px;border:1px solid black;margin:0 auto;}
@@ -127,38 +129,3 @@ $light_gray:#efefef;
 	}
 }
 
-footer {
-	
-}
-/*
-footer {
-	margin-top:10px;
-	padding-top:40px;
-	position:relative;
-	color:#fff;
-	background-image:url('footer-bg2.gif');
-	background-repeat:no-repeat;
-	background-size:100% auto;
-	li {
-		list-style: none;
-		margin-left:none;
-
-	}
-	#copyright {
-		margin-top:30px;
-		text-align:right;
-	}
-	small {
-		color:darken($white, 50%);
-
-	}
-	
-	legend {
-		color:$white;
-		border-bottom:none;
-
-	}
-	
-	
-
-}*/
