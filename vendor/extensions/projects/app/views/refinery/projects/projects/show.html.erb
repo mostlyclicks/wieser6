@@ -9,25 +9,27 @@
   <div class="span8">
     <h2><%= raw @project.title %></h2>
     <p><%= raw @project.description %></p>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <h4>Project Gallery</h4>
+          <ul id="project-gallery">
+          <% @project.images.each do |i| %>
+            <li>
+              <%= link_to image_tag(i.thumbnail("100x100#c").url), i.thumbnail("900x600").url %>
+            </li>
+          <% end %>
+        </ul>
+        </div>
+      </div>
+
   </div>
   <div class="span4" id="quotebox">
     <%=raw @project.testimonial %>
   </div>
-</div>
-<div class="row-fluid">
-  <div class="span12">
-    <ul>
-    <% @project.images.each do |i| %>
-      <li>
-        <%= link_to image_tag(i.thumbnail("200x200#c").url), i.thumbnail("900x600").url %>
-      </li>
-    <% end %>
-  </ul>
-
-
-  </div>
 
 </div>
+
 
 
 
