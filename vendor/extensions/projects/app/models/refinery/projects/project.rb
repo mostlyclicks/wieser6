@@ -1,6 +1,9 @@
 module Refinery
   module Projects
     class Project < Refinery::Core::BaseModel
+      extend FriendlyId
+      friendly_id :title, use: :slugged
+      
       self.table_name = 'refinery_projects'
 
       attr_accessible :title, :excerpt, :description, :pdf_link, :hero_image_id, :project_status, :testimonial, :position
@@ -11,6 +14,9 @@ module Refinery
 
       belongs_to :hero_image, :class_name => '::Refinery::Image'
       has_many_page_images
+
+     
+
     end
   end
 end

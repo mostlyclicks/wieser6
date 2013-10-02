@@ -1,11 +1,29 @@
+
+<%#= @archived_projects.count %>
 <% content_for :body do %>
-  <ul id="projects">
+  <ul id="project-gallery">
+
     <% @projects.each do |project| %>
-      <li>
-        <%= link_to project.title, refinery.projects_project_path(project) %>
-      </li>
+      
+            
+      
+        <li>
+          
+        	<%= image_fu(project.hero_image, '150x150#c') %>
+          <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
+          <p><%= project.slug %></p>
+          
+        </li>
+
+         
+     
+     
     <% end %>
   </ul>
 <% end %>
 
 <%= render '/refinery/content_page' %>
+
+
+
+

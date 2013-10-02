@@ -1,0 +1,15 @@
+<h1>Archived HELLOsss</h1>
+
+<%= @archived_projects.count %>
+<% content_for :body do %>
+  <ul id="projects">
+    <% @archived_projects.each do |project| %>
+      <li>
+        <%= link_to project.title, refinery.projects_project_path(project) %>
+      </li>
+    <% end %>
+  </ul>
+  ssss
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -4,19 +4,33 @@ module Refinery
 
       before_filter :find_all_projects
       before_filter :find_page
+      before_filter :find_archived
+      before_filter :find_completed
+
 
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @project in the line below:
         present(@page)
+        #@archived_projects = Project.where project_status: "3"
       end
 
       def show
-        @project = Project.find(params[:id])
+        @project = Project.friendly_id.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @project in the line below:
         present(@page)
+      end
+
+      def archived
+        #{}"hello"
+        #@archived_projects = Project.where project_status: "3"
+        
+      end
+
+      def completed
+
       end
 
       def home?
@@ -31,6 +45,14 @@ module Refinery
 
       def find_page
         @page = ::Refinery::Page.where(:link_url => "/projects").first
+      end
+
+      def find_archived
+        @archived_projects = Project.where project_status: "3"
+      end
+
+      def find_completed
+        @completed_projects = Project.where project_status: "2"
       end
 
     end

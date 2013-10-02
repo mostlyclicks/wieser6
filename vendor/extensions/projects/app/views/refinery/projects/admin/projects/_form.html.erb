@@ -13,7 +13,8 @@
   <div class='field'>
     <%= f.label :project_status -%>
     <%#= f.text_field :project_status  -%>
-    <%= f.select :project_status, options_for_select([["Current", 1], ["Completed", 2], ["Archived", 3]]) -%>
+    <%= f.select :project_status, options_for_select([["Current", 1], ["Completed", 2], ["Archived", 3], ["Hide", 4]],
+                                                    :selected => @project.project_status) -%>
 
   </div> 
 
