@@ -25,6 +25,8 @@
 
 	footer legend {font-size:18px;}
 	footer input {width:100%;}
+	.btn {margin-top:10px;}
+
 
 
  }
@@ -34,9 +36,12 @@
 	body {border:1px solid blue;}
 	footer .span4 {margin-bottom:20px !important;}
 	footer .span2 {width:50% !important;float:left !important;height:8em;}
+	.form-horizontal .btn {margin-top:10px;}
+
  }
  
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 	body {border:1px solid yellow;}
+	.form-horizontal .btn {margin-top:10px;width:100%;}
  }
