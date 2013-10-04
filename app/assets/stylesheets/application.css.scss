@@ -34,7 +34,8 @@ $light_gray:#efefef;
  	z-index:0;
  	#big-image {
  		width:100%;
- 		margin-top:-363px;
+ 		/*margin-top:-363px;*/
+ 		margin-top:-400px;
  		position:relative;
  		z-index:-2;
  	}
@@ -69,6 +70,7 @@ $light_gray:#efefef;
  }
 
  #myCarousel {width:100%;}
+ .carousel-inner {overflow:visible !important;}
 
 .home-hero {
 	position:relative;
@@ -80,9 +82,12 @@ $light_gray:#efefef;
 
 
 
+
+
 #quotebox {
 	
 	background-color:$slate_blue;
+	opacity:0.9;
 	min-height:100px;
 	padding:20px;
 	border-radius:3px;
