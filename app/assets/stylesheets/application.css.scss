@@ -32,10 +32,11 @@ $light_gray:#efefef;
  #intro {
  	position:relative;
  	z-index:0;
+
  	#big-image {
  		width:100%;
- 		/*margin-top:-363px;*/
- 		margin-top:-400px;
+ 		border:1px solid red;
+ 		margin-top:-363px;
  		position:relative;
  		z-index:-2;
  	}
@@ -86,10 +87,10 @@ $light_gray:#efefef;
 
 
 #quotebox {
-	
+	position:absolute;
 	background-color:$slate_blue;
 	opacity:0.9;
-	min-height:100px;
+	min-height:200px;
 	padding:20px;
 	border-radius:3px;
 	p {
