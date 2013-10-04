@@ -35,7 +35,7 @@ $light_gray:#efefef;
 
  	#big-image {
  		width:100%;
- 		border:1px solid red;
+ 		
  		margin-top:-363px;
  		position:relative;
  		z-index:-2;
@@ -70,7 +70,7 @@ $light_gray:#efefef;
 	}
  }
 
- #myCarousel {width:100%;}
+ #myCarousel {width:99.60%;margin:0 auto 0 auto;}
  .carousel-inner {overflow:visible !important;}
  .carousel-indicators {top:-118px !important;}
 
