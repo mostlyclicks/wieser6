@@ -60,6 +60,6 @@ module Wieser6
     config.assets.version = '1.0'
 
     #http://refinerycms.com/guides/heroku - but set to false
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
   end
 end
