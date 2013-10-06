@@ -40,7 +40,8 @@ module Refinery
     protected
 
       def find_all_projects
-        @projects = Project.order('position ASC')
+        #@projects = Project.order('position ASC')
+        @projects = Project.where project_status: "1"
       end
 
       def find_page

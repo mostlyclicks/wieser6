@@ -21,11 +21,23 @@
 	.home-buckets h3 {font-size:14px;}
 
 	.home-hero .span4 {width:100% !important;}
-	.home-hero .offset8 {border:1px solid white;min-height:400px;}
+	.home-hero .offset8 {min-height:400px;}
 
 	footer legend {font-size:18px;}
 	footer input {width:100%;}
 	.btn {margin-top:10px;}
+
+	#intro #big-image {display:block;position:static;margin-top:0px;z-index:1002;width:100%;margin:0 auto 0 auto;}
+
+	.home-hero .span4 {width:100%;display:block;}
+	.home-hero .row-fluid .offset8:first-child {margin-left:0%;}
+	#quotebox {position:absolute;bottom:10px;min-height:100px !important;padding:10px;}
+	#quotebox h4 {margin-top:0px;}
+	#quotebox p {font-size:14px;}
+
+	#home-bucket-section {margin-top:110px;}
+
+
 
 
 
@@ -38,10 +50,22 @@
 	footer .span2 {width:50% !important;float:left !important;height:8em;}
 	.form-horizontal .btn {margin-top:10px;}
 
+	#intro #big-image {display:block;position:static;margin-top:0px;z-index:1002;width:100%;margin:0 auto 0 auto;}
+
+	.home-hero .span4 {width:100%;display:block;}
+	.home-hero .row-fluid .offset8:first-child {margin-left:0%;}
+	#quotebox {position:absolute;bottom:10px;min-height:10px !important;padding:10px;border-radius:0px;}
+	#quotebox h4 {margin-top:0px;}
+	#quotebox p {font-size:14px;}
+
+	#home-bucket-section {margin-top:110px;}
+
  }
  
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 	body {border:1px solid yellow;}
 	.form-horizontal .btn {margin-top:10px;width:100%;}
+	#home-bucket-section {margin-top:100px;}
+	#quotebox {width:100%;display:block;float:left;margin-top:100px;border-radius:0px;}
  }

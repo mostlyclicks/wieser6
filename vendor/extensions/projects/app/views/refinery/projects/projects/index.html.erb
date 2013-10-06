@@ -1,29 +1,17 @@
-
-<%#= @archived_projects.count %>
-<% content_for :body do %>
-  <ul id="project-gallery">
-
-    <% @projects.each do |project| %>
-      
-            
-      
+<div class="row-fluid" id="l2-main">
+  <div class="span9" style="border-right:1px solid #636363;">
+    <h2>Projects</h2>
+    <ul id="project-gallery">
+      <% @projects.each do |project| %>
         <li>
-          
-        	<%= image_fu(project.hero_image, '150x150#c') %>
+          <%= image_fu(project.hero_image, '150x150#c') %>
           <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
-          <p><%= project.slug %></p>
-          
         </li>
-
-         
-     
-     
-    <% end %>
-  </ul>
-<% end %>
-
-<%= render '/refinery/content_page' %>
-
-
-
-
+      <% end %>
+    </ul>
+  </div>
+  <div class="span3">
+    <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
+    <p><%= link_to 'Archived Projects', refinery.projects_projects_archived_path %></p>
+  </div>
+</div>

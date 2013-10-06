@@ -1,3 +1,4 @@
+
 <% content_for :intro do %>
 <div id="myCarousel" class="carousel slide">
   
@@ -11,19 +12,22 @@
 
 <% @projects_for_home.each_with_index do |p, index| %>
 <div class="<% if index == 0 %>active<% end %> item">
-  <div id="intro">
-    <div class="container home-hero">
-  		<div class="row-fluid">
-  			<div class="span4 offset8" id="quotebox" >
-          <h4><%= p.title %></h4>
-    			<p><%= raw p.testimonial %></p>
-    			
-    			
-  			</div>
-  		</div>
+  
+    <div id="intro">
+      <!-- load image here for phone and tablet -->
+      <%= image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-desktop' %>
+      <div class="container home-hero">
+    		<div class="row-fluid">
+    			<div class="span4 offset8" id="quotebox" >
+            <h4><%= p.title %></h4>
+      			<div class="hidden-phone"><p><%= raw p.testimonial %></p></div>
+    			</div>
+    		</div>
+      </div>
+      <!-- load image here for desktop - hide for phone and tablet -->
+      <%= image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-phone hidden-tablet' %>
     </div>
-    <%= image_fu p.hero_image, nil, id: 'big-image' %>
-  </div>
+  
 </div>
 <% end %>
 
@@ -33,34 +37,12 @@
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div> 
-<!--	
-<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol> -->
-  <!-- Carousel items --> <!-- 
-  <div class="carousel-inner">
-    <div class="active item">…</div>
-    <div class="item">…</div>
-    <div class="item">…</div>
-  </div> -->
-  <!-- Carousel nav --> <!-- 
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-
--->
-	
-
-
 
 
 
 <% end %>
 
-<div class="row-fluid" style="">
+<div class="row-fluid" id="home-bucket-section">
 
 <div class="row-fluid home-buckets" style="margin-top:-100px;position:relative;">
 	<div class="span12" style="padding:20px;">

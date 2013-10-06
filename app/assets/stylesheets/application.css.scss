@@ -23,6 +23,7 @@ $wieser_green: #004a30;
 $slate_blue:#4b7da4;
 $white:#ffffff;
 $light_gray:#efefef;
+$dark_gray:#636363;
 
 .red-border {border:1px solid red;}
 
@@ -32,6 +33,9 @@ $light_gray:#efefef;
  #intro {
  	position:relative;
  	z-index:0;
+ 	-webkit-box-shadow: 0 8px 6px -6px $dark_gray;
+	   -moz-box-shadow: 0 8px 6px -6px $dark_gray;
+	        box-shadow: 0 8px 6px -6px $dark_gray;
 
  	#big-image {
  		width:100%;
@@ -74,17 +78,13 @@ $light_gray:#efefef;
  .carousel-inner {overflow:visible !important;}
  .carousel-indicators {top:-118px !important;}
 
+
 .home-hero {
 	position:relative;
-	z-index:20;
-	top:0;
+	z-index:2011;
+	bottom:0px;
 	left:0;
-
 }
-
-
-
-
 
 #quotebox {
 	position:absolute;
@@ -109,6 +109,7 @@ $light_gray:#efefef;
 #l2-main {
 	min-height:500px;
 	margin-top:40px;
+	margin-bottom:40px;
 }
 
 .home-buckets {
