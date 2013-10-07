@@ -45,3 +45,4 @@ gem 'jquery-rails', '~> 2.0.0'
 
 gem 'refinerycms-projects', :path => 'vendor/extensions'
 gem 'refinerycms-page-images', '~> 2.0.0'
+gem "refinerycms-news", '~> 2.0.0'

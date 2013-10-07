@@ -13,3 +13,6 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS Projects extension
 Refinery::Projects::Engine.load_seed
+
+# Added by Refinery CMS News engine
+Refinery::News::Engine.load_seed
