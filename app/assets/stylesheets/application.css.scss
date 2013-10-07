@@ -106,11 +106,22 @@ $dark_gray:#636363;
 	}
 }
 
+#quotebox-l2 {
+	display:block;
+	padding:20px;
+	border-radius:3px;
+	background-color:$slate_blue;
+	opacity:0.7;
+	background:url('trans-quote.png') no-repeat -11px -6px $slate_blue;
+}
+
 #l2-main {
 	min-height:500px;
 	margin-top:40px;
 	margin-bottom:40px;
 }
+
+#sidebar {margin-top:82px;}
 
 .home-buckets {
 	background-color:$white;

@@ -12,5 +12,10 @@ Refinery::PagesController.class_eval do
 		def list_of_projects
 			@projects_for_home = Refinery::Projects::Project.where project_status: "1"
 			@project_for_home = Refinery::Projects::Project.first
+			@testimonial = @projects_for_home.sample
 		end
+
+		#def load_random_testimonial
+		#	@testimonial = 
+		#end
 end
