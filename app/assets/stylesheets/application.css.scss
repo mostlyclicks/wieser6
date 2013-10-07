@@ -143,8 +143,17 @@ $dark_gray:#636363;
 	li {
 		display:block;
 		float:left;
-		margin-right:10px;
+		height:200px;
+		width:150px;
+		margin-right:20px;
 		margin-bottom:10px;
-	}
+		clear:right;
+		
+		h5 {
+			font-size:12px;
+			line-height: 14px;
+		}
+	} 
+
 }
 

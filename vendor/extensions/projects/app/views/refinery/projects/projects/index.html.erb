@@ -5,7 +5,7 @@
       <% @projects.each do |project| %>
         <li>
           <%= image_fu(project.hero_image, '150x150#c') %>
-          <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
+          <h5><%= link_to project.title, refinery.projects_project_path(project) %></h5>
         </li>
       <% end %>
     </ul>
