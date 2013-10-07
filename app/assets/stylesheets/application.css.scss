@@ -115,6 +115,13 @@ $dark_gray:#636363;
 	background:url('trans-quote.png') no-repeat -11px -6px $slate_blue;
 }
 
+#featured-project {
+	padding:5px 20px 20px 20px;
+	margin:20px 0 20px 0;
+	border-radius:3px;
+	background-color:$light_gray;
+}
+
 #l2-main {
 	min-height:500px;
 	margin-top:40px;

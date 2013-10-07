@@ -5,7 +5,11 @@
 		<strong><%= raw @testimonial.title %></strong>
 		<%= raw @testimonial.testimonial %>
 	</div>
-
+	<div id="featured-project">
+		<h6>Featured project</h6>
+		<h4><%= raw @random_project.title %></h4>
+		<%= image_fu(@random_project.hero_image) %>
+	</div>
 
 </div>
 

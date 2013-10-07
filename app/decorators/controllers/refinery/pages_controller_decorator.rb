@@ -13,6 +13,7 @@ Refinery::PagesController.class_eval do
 			@projects_for_home = Refinery::Projects::Project.where project_status: "1"
 			@project_for_home = Refinery::Projects::Project.first
 			@testimonial = @projects_for_home.sample
+			@random_project = @projects_for_home.sample
 		end
 
 		#def load_random_testimonial
