@@ -48,11 +48,12 @@
 	<div class="span12" style="padding:20px;">
 	<div class="span4">
 		<h1>Trust<br />Excellence<br />Partnership</h1>
-		<h3><i class="icon-chevron-right"></i> Why Wieser Brothers</h3>
+		<h3><i class="icon-chevron-right"></i> <%= link_to 'Why Wieser Brothers', '/why-wieser-brothers' %></h3>
 	</div>
 	<div class="span4">
-		<%= image_tag "bucket2.png" %>
-		<h3><i class="icon-chevron-right"></i> Our Latest Projects</h3>
+    <%= image_fu(@testimonial.hero_image, '357x140#c') %>
+		<%#= image_tag "bucket2.png" %>
+		<h3><i class="icon-chevron-right"></i> <%= link_to 'Our Latest Projects', '/projects' %></h3>
 	</div>
 	<div class="span4">
 		<%= image_tag "bucket3.png" %>
