@@ -27,7 +27,7 @@
     <div class="row-fluid">
   <div class="span12" id="links">
     <h4>Project Gallery</h4>
-    <ul id="project-gallery">
+    <ul id="project-gallery-show">
     <% @project.images.each do |i| %>
       <li>
         <%= link_to image_tag(i.thumbnail("64x64#c").url), i.thumbnail("900x600").url %>

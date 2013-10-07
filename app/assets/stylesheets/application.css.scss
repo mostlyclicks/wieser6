@@ -137,7 +137,7 @@ $dark_gray:#636363;
 	}
 }
 
-#project-gallery {
+#project-gallery-index {
 	margin:0;
 	padding:0;
 	li {
@@ -153,6 +153,21 @@ $dark_gray:#636363;
 			font-size:12px;
 			line-height: 14px;
 		}
+	} 
+
+}
+
+#project-gallery-show {
+	margin:0;
+	padding:0;
+	li {
+		display:block;
+		float:left;
+		
+		
+		margin-right:5px;
+		margin-bottom:5px;
+		
 	} 
 
 }
