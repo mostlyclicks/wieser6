@@ -1,0 +1,49 @@
+       <footer>
+        <div class="container">
+        <div class="row-fluid" style="min-height:200px;">
+          <div class="span4 form-horizontal" id="email-sign-up">
+            <form>
+              <fieldset>
+                <label>Search</label>
+                <input type="text" placeholder="Search..." class="span9">
+                <button type="submit" class="btn">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="span2">
+            <ul>
+              <li><%= link_to 'Why Wieser Brothers', '/why-wieser-brothers' %></li>
+              <li><%= link_to 'Trust', '/why-wieser-brothers#trust' %></li>
+              <li><%= link_to 'Excellence', '/why-wierser-brothers#excellence' %></li>
+              <li><%= link_to 'Partnership', '/why-wierser-brothers#partnership' %></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li><%= link_to 'Projects', projects_projects_path %></li>
+              <li><%= link_to 'Current Projects', projects_projects_path %></li>
+              <li><%= link_to 'Completed Projects', projects_projects_completed_path %></li>
+              <li><%= link_to 'Archives', projects_projects_archived_path %></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li><%= link_to 'Services', '/services' %></li>
+              <li><%= link_to 'Design/Build', '/services#design-build' %></li>
+              <li><%= link_to 'Commercial', '/services#commercial' %></li>
+              <li><%= link_to 'Residential', '/services#residential' %></li>
+              <li><%= link_to 'Concrete', '/services#concrete' %></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul>
+              <li><%= link_to 'Contact Us', '/contact-us' %></li>
+              <li><%= link_to 'News', '/news' %></li>
+              <li><%= link_to 'Employment Opportunities', '/employment-opportunities' %></li>
+              <li><%= link_to 'Bid Opportunities', '/bid-opportunities' %></li>
+            </ul>
+          </div>
+          <%= render '/refinery/footer' -%>
+        </div>
+      </div>
+      </footer>
