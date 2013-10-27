@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
+  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/90ccd044-a350-4224-991a-c27e5193c0e8.css"/>
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
@@ -90,7 +91,7 @@ var $ = jQuery.noConflict();
 
 $(document).ready(function() {
  $('#myCarousel').carousel({
-       interval: 4000,
+       interval: 5000,
           cycle: true
  });
 });

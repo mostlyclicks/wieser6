@@ -103,6 +103,8 @@ $dark_gray:#636363;
 	h1 {
 		color:$white;
 		text-shadow: 2px 2px #000000;
+		font-size:56px;
+		line-height:1em;
 	} a {
 		color:$white;
 	} :hover {
@@ -205,4 +207,38 @@ $dark_gray:#636363;
 	} 
 
 }
+
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
 
