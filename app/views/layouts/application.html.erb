@@ -9,12 +9,14 @@
 
     <div id="page_container">
       
-      <div id="home">
-        <div class="container" style="position:relative;z-index:200;">
+      <div id="home" >
+        <div id="header-row">
+        <div class="container" >
           <header id="nav">
             <%= render '/refinery/header' -%>
           </header>
         </div><!-- top container -->
+      </div>
         <%= yield :intro %>
       </div>
 

@@ -31,6 +31,10 @@ $dark_gray:#636363;
 
  h1 {font-family:'Impact W15 2010';}
 
+ #header-row {
+ 	background-color:$light_gray;
+
+ }
  //#home div > div[id] > div {width:940px;border:1px solid black;margin:0 auto;}
  #intro {
  	position:relative;
@@ -42,9 +46,10 @@ $dark_gray:#636363;
  	#big-image {
  		width:100%;
  		
+ 		/*
  		margin-top:-363px;
  		position:relative;
- 		z-index:-2;
+ 		z-index:-2;*/
  	}
  }
  
@@ -78,7 +83,7 @@ $dark_gray:#636363;
 
  #myCarousel {width:99.60%;margin:0 auto 0 auto;}
  .carousel-inner {overflow:visible !important;}
- .carousel-indicators {top:-118px !important;}
+ .carousel-indicators {top:15px !important;}
 
 
 .home-hero {
@@ -90,11 +95,15 @@ $dark_gray:#636363;
 
 #quotebox {
 	position:absolute;
-	background-color:$slate_blue;
+	background-color:none;
 	opacity:0.9;
 	min-height:200px;
 	padding:20px;
 	border-radius:3px;
+	h1 {
+		color:$white;
+		text-shadow: 2px 2px #000000;
+	}
 	p {
 		font-family: Times, serif;
 		font-size:18px;

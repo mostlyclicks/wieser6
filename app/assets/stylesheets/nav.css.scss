@@ -7,16 +7,20 @@ $white:#ffffff;
 a {color:$wieser_green;}
 
 .navbar-inner {
-  background-image:url('nav-bg.png');
+  // /*background-image:url('nav-bg.png');*/
   background-size:100%;
   opacity:0.9;
-  border:1px solid $wieser_green;
+  background-color:transparent !important;
+  border:none !important;
+  background-image:none !important;
+  box-shadow:none !important;
+  
 
  
 
 	.nav li a {
 		line-height:75px;
-		color:$white;
+		color:$wieser_green;
 		text-shadow:none;
 		font-size:16px;
 		&:hover {
