@@ -15,17 +15,17 @@
   
     <div id="intro">
       <!-- load image here for phone and tablet -->
-      <%= image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-desktop' %>
+      <%= link_to (image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-desktop'), refinery.projects_project_path(p) %>
       <div class="container home-hero">
     		<div class="row-fluid">
     			<div class="span5 offset7" id="quotebox" >
-            <h1><%= p.title %></h1>
+            <h1><%= link_to p.title, refinery.projects_project_path(p) %></h1>
       			<div class="hidden-phone"><p><%#= raw p.testimonial %></p></div>
     			</div>
     		</div>
       </div>
       <!-- load image here for desktop - hide for phone and tablet -->
-      <%= image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-phone hidden-tablet' %>
+      <%= link_to (image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-phone hidden-tablet'), refinery.projects_project_path(p)  %>
     </div>
   
 </div>

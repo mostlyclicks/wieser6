@@ -103,6 +103,12 @@ $dark_gray:#636363;
 	h1 {
 		color:$white;
 		text-shadow: 2px 2px #000000;
+	} a {
+		color:$white;
+	} :hover {
+		text-decoration:none;
+		color:$white - 10;
+		text-shadow: 2px 3px 6px #000000;
 	}
 	p {
 		font-family: Times, serif;
