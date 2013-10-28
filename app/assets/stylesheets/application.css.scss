@@ -58,7 +58,7 @@ $dark_gray:#636363;
  	background-color:$light_gray;
 	width:100%;
  	padding:30px 0 0px 0;
- 	background-image:url('footer-bg5.png');
+ 	background-image:url('footer-bg6.png');
  	background-position:right;
  	background-repeat:no-repeat;
 
@@ -162,10 +162,13 @@ $dark_gray:#636363;
 		text-transform: uppercase;
 		color:$wieser_green;
 		background-color:$light_gray;
-		padding:10px 0 0 10px;
+		padding:5px 0 0 10px;
 		display:block;
-		height:130px;
+		height:108px;
 		margin:0;
+	} h1 {
+		
+		line-height:.9em;
 	}
 
 	h3 {
