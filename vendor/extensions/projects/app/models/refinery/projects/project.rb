@@ -6,7 +6,7 @@ module Refinery
       
       self.table_name = 'refinery_projects'
 
-      attr_accessible :title, :excerpt, :description, :pdf_link, :hero_image_id, :project_status, :testimonial, :position
+      attr_accessible :title, :excerpt, :description, :pdf_link, :hero_image_id, :project_status, :testimonial, :position, :pdf_file_id
 
       acts_as_indexed :fields => [:title, :excerpt, :description, :pdf_link, :project_status, :testimonial]
 
