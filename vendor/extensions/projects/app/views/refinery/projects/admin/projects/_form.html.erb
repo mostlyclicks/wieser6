@@ -27,6 +27,17 @@
                :toggle_image_display => false %>
 
   </div>
+
+  <div class="field">
+    <%= f.label :pdf_file_id -%>
+    <%= render "/refinery/admin/resource_picker",
+      :f => f, 
+      :field => :pdf_file_id, 
+      :resource => @resource 
+   %> 
+
+
+  </div>
   
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131007180710) do
+ActiveRecord::Schema.define(:version => 20131030211615) do
 
   create_table "refinery_image_page_translations", :force => true do |t|
     t.integer  "refinery_image_page_id"
@@ -179,6 +179,8 @@ ActiveRecord::Schema.define(:version => 20131007180710) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.string   "slug"
+    t.integer  "pdf_id"
+    t.integer  "pdf_file_id"
   end
 
   add_index "refinery_projects", ["slug"], :name => "index_refinery_projects_on_slug"
