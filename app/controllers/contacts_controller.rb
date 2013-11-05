@@ -1,4 +1,7 @@
 class ContactsController < ApplicationController
+  http_basic_authenticate_with name: 'wieser6', password: 'wieser6', only: :index
+
+
   # GET /contacts
   # GET /contacts.json
   def index
@@ -44,13 +47,18 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render json: @contact, status: :created, location: @contact }
+        ContactMailer.contact_confirmation(@contact).deliver
+        format.html { render action: 'thank_you', notice: 'Contact was successfully created.' }
+        #format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: "new" }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def thank_you
+
   end
 
   # PUT /contacts/1

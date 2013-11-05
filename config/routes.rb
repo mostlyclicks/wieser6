@@ -1,5 +1,6 @@
 Wieser6::Application.routes.draw do
 
+  get "/contact" => "contacts#new"
   resources :contacts
 
 

@@ -1,4 +1,6 @@
-<%= form_for(@contact) do |f| %>
+<p>If you have a project in mind or any other questions or comments, please let us know.</p>
+
+<%= form_for @contact, html: {class: "form-horizontal"} do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
@@ -11,23 +13,39 @@
     </div>
   <% end %>
 
+<div class="control-group">
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <label class="control-label"><%= f.label :name %></label>
+    <div class="controls"><%= f.text_field :name %></div>
   </div>
+</div>
+  
+<div class="control-group">
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <label class="control-label"><%= f.label :email %></label>
+    <div class="controls"><%= f.text_field :email %></div>
   </div>
+</div>
+
+<div class="control-group">
+    <div class="field">
+    <label class="control-label"><%= f.label :subject %></label>
+    <div class="controls"><%= f.text_field :subject %></div>
+  </div>
+</div>
+
+<div class="control-group">
   <div class="field">
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
+    <label class="control-label"><%= f.label :message %></label>
+    <div class="controls"><%= f.text_area :message, class: 'span6', rows: 6 %></div>
   </div>
-  <div class="field">
-    <%= f.label :message %><br />
-    <%= f.text_area :message %>
-  </div>
+</div>
+
+<div class="control-group">
+  <div class="controls">
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit' %>
   </div>
+</div>
+</div>
 <% end %>
