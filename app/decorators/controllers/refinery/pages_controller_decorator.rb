@@ -10,7 +10,7 @@ Refinery::PagesController.class_eval do
 		end
 
 		def list_of_projects
-			@projects_for_home = Refinery::Projects::Project.where project_status: "1"
+			@projects_for_home = (Refinery::Projects::Project.where project_status: "1").limit(3)
 			@project_for_home = Refinery::Projects::Project.first
 			@testimonial = @projects_for_home.sample
 			@random_project = @projects_for_home.sample
