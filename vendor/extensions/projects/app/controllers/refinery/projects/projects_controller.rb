@@ -9,9 +9,14 @@ module Refinery
 
 
       def index
+        if params[:tag]
+          @projects = Project.tagged_with(params[:tag])
+        else
+          @projects = Project.all
+        end
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @project in the line below:
-        present(@page)
+        ##present(@page)
         #@archived_projects = Project.where project_status: "3"
       end
 
