@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   # Runtime dependencies
   s.add_dependency             'refinerycms-core',    '~> 2.0.10'
   s.add_dependency             'refinerycms-page-images'#, '~> 2.0.0'
+  s.add_dependency             'acts-as-taggable-on'
 
   # Development dependencies (usually used for testing)
   s.add_development_dependency 'refinerycms-testing', '~> 2.0.10'
