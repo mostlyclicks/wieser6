@@ -8,6 +8,7 @@
 <div class="row-fluid" id="l2-main">
   <div class="span7">
     <h2><%= raw @project.title %></h2>
+    <small><%= raw @project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %></small>
     <p><%= raw @project.description %></p>
 
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">

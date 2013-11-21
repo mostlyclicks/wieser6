@@ -8,6 +8,7 @@ Refinery::Core::Engine.routes.append do
 
     root :to => 'projects#index'
     resources :projects, :path => '', :only => [:index, :show, :archived]
+    get 'tags/:tag', to: 'projects#index', as: :tag
   end
 
 #match 'products/:id' => 'catalog#view'
