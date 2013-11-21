@@ -16,7 +16,12 @@
     <%= f.select :project_status, options_for_select([["Current", 1], ["Completed", 2], ["Archived", 3], ["Hide", 4]],
                                                     :selected => @project.project_status) -%>
 
-  </div> 
+  </div>
+
+  <div class="field">
+    <%= f.label :tag_list, "Tags (separted by commas)" %>
+    <%= f.text_field :tag_list %>
+  </div>
 
   <div class='field'>
     <%= f.label :hero_image -%>
