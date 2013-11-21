@@ -6,6 +6,10 @@
         <li>
           <%= image_fu(project.hero_image, '150x150#c') %>
           <h5><%= link_to project.title, refinery.projects_project_path(project) %></h5>
+          <small>
+            <%= raw project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %>
+
+          </small>
         </li>
       <% end %>
     </ul>
