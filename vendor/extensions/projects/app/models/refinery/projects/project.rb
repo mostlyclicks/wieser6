@@ -17,8 +17,7 @@ module Refinery
       belongs_to :hero_image, :class_name => '::Refinery::Image'
       has_many_page_images
 
-     
-
+      acts_as_taggable
     end
   end
 end
