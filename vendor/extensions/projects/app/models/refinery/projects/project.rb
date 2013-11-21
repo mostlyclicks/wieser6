@@ -1,3 +1,5 @@
+require 'acts-as-taggable-on'
+
 module Refinery
   module Projects
     class Project < Refinery::Core::BaseModel
