@@ -9,6 +9,8 @@
           <small>
             <%= raw project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %>
 
+            
+
           </small>
         </li>
       <% end %>
@@ -17,5 +19,34 @@
   <div class="span3">
     <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
     <p><%= link_to 'Archived Projects', refinery.projects_projects_archived_path %></p>
+    <p>
+
+      <style>
+        .css1 { font-size: 1.0em; }
+        .css2 { font-size: 1.2em; }
+        .css3 { font-size: 1.4em; }
+        .css4 { font-size: 1.6em; }
+        #tag_cloud {
+          width: 400px;
+          line-height: 1.6em;}
+        #tag_cloud .s { font-size: 0.8em; }
+        #tag_cloud .m { font-size: 1.2em; }
+        #tag_cloud .l { font-size: 1.8em; }  
+        
+      </style>
+      
+
+      <h4>Tags:</h4>
+      <% len = @tags.length %>
+      <% @tags.each_with_index do |t, index| %>
+        <% unless len == index+1 %>
+          <%= (link_to t.name, refinery.projects_tag_path(t.name)) + (', ')  %>
+        <% else %>
+          <%= link_to t.name, refinery.projects_tag_path(t.name)  %>
+        <% end %>        
+      <% end %>
+
+      
+    </p>
   </div>
 </div>

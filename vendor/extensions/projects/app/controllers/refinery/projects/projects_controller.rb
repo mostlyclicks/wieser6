@@ -6,6 +6,7 @@ module Refinery
       before_filter :find_page
       before_filter :find_archived
       before_filter :find_completed
+      before_filter :find_all_tags
 
 
       def index
@@ -48,7 +49,15 @@ module Refinery
         
       end
 
+      def tag_cloud
+        #@tags = Project.tag_counts_on(:tags)
+      end
+
     protected
+
+      def find_all_tags
+        @tags = ActsAsTaggableOn::Tag.all
+      end
 
       def find_all_projects
         #@projects = Project.order('position ASC')
