@@ -1,4 +1,4 @@
-
+ 
 <% content_for :intro do %>
 <div id="myCarousel" class="carousel slide carousel-fade">
   
@@ -15,7 +15,7 @@
   
     <div id="intro">
       <!-- load image here for phone and tablet -->
-      <%= link_to (image_fu p.hero_image, nil, id: 'big-image', class: 'hidden-desktop'), refinery.projects_project_path(p) %>
+      <%= link_to (image_fu p.hero_image, '1200x600c', id: 'big-image', class: 'hidden-desktop'), refinery.projects_project_path(p) %>
       <div class="container home-hero">
     		<div class="row-fluid">
     			<div class="span5 offset7" id="quotebox" >
