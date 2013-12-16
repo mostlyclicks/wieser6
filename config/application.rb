@@ -62,5 +62,11 @@ module Wieser6
 
     #http://refinerycms.com/guides/heroku - but set to false
     config.assets.initialize_on_precompile = true
+
+    config.to_prepare do
+        Refinery.searchable_models = [Refinery::Page, Refinery::Projects::Project]
+    end
+        
+    
   end
 end

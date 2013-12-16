@@ -24,6 +24,11 @@
       <div class="container">
         <section id="page" >
           <%= yield %>
+          <% content_for :search do %>
+            <%= render '/shared/search' %>
+          <% end %>
+          
+          <%#= render '/shared/search' %>
         </section>
       </div><!-- middle container -->
 
@@ -33,13 +38,7 @@
         <div class="container">
         <div class="row-fluid" style="min-height:200px;">
           <div class="span4 form-horizontal" id="email-sign-up">
-            <form>
-              <fieldset>
-                <label>Search</label>
-                <input type="text" placeholder="Search..." class="span9">
-                <button type="submit" class="btn">Submit</button>
-              </fieldset>
-            </form>
+            <%= yield :search %>
           </div>
           <div class="span2">
             <ul>

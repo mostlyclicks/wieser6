@@ -179,6 +179,8 @@ GEM
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.10)
+    refinerycms-search (2.0.0)
+      refinerycms-core (~> 2.0.4)
     refinerycms-settings (2.0.3)
       acts_as_indexed (~> 0.7.7)
       refinerycms-core (~> 2.0.10)
@@ -232,6 +234,7 @@ DEPENDENCIES
   refinerycms-news (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
   refinerycms-projects!
+  refinerycms-search (~> 2.0.0)
   sass-rails (~> 3.2.3)
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

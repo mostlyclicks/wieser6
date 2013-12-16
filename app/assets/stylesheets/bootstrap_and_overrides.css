@@ -31,9 +31,13 @@
 
 	.home-hero .span4 {width:100%;display:block;}
 	.home-hero .row-fluid .offset8:first-child {margin-left:0%;}
-	#quotebox {position:absolute;bottom:10px;min-height:100px !important;padding:10px;}
+	#quotebox {position:absolute;top:0px;min-height:100px !important;padding:10px;background:none;
+			  	-webkit-box-shadow:none;
+	   			-moz-box-shadow:none;
+	        	box-shadow:none;}
 	#quotebox h4 {margin-top:0px;}
 	#quotebox p {font-size:14px;}
+	.carousel-indicators {top:5px !important;}
 
 	#home-bucket-section {margin-top:110px;}
 
@@ -54,9 +58,14 @@
 
 	.home-hero .span4 {width:100%;display:block;}
 	.home-hero .row-fluid .offset8:first-child {margin-left:0%;}
-	#quotebox {position:absolute;bottom:10px;min-height:10px !important;padding:10px;border-radius:0px;}
+	#quotebox {position:absolute;top:0px;min-height:10px !important;padding:10px;background:none;
+				text-align:center!important;
+				-webkit-box-shadow:none;
+	   			-moz-box-shadow:none;
+	        	box-shadow:none;}
 	#quotebox h4 {margin-top:0px;}
 	#quotebox p {font-size:14px;}
+	.carousel-indicators {top:4px !important;}
 
 	#home-bucket-section {margin-top:110px;}
 	#quotebox h1 {font-size:24px;font-family:helvetica, arial, sans-serif;font-weight:normal;}
@@ -67,6 +76,10 @@
 @media (max-width: 480px) { 
 	body {border:1px solid yellow;}
 	.form-horizontal .btn {margin-top:10px;width:100%;}
+	.home-buckets {border-radius:0;}
 	#home-bucket-section {margin-top:100px;}
 	#quotebox {width:100%;display:block;float:left;margin-top:100px;border-radius:0px;}
+	#quotebox h4 {margin-top:40px;}
+	.brand {width:50%;}
+	.carousel-inner {height:140px !important;}
  }
