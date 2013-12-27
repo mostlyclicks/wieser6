@@ -14,6 +14,7 @@ Refinery::PagesController.class_eval do
 			@project_for_home = Refinery::Projects::Project.first
 			@testimonial = @projects_for_home.sample
 			@random_project = @projects_for_home.sample
+			@news_item = (Refinery::News::Item.last)
 		end
 
 		#def load_random_testimonial
