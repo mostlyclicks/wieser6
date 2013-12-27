@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131202001551) do
+ActiveRecord::Schema.define(:version => 20131227172343) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -104,12 +104,13 @@ ActiveRecord::Schema.define(:version => 20131202001551) do
     t.string   "title"
     t.text     "body"
     t.datetime "publish_date"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.integer  "image_id"
     t.datetime "expiration_date"
     t.string   "source"
     t.string   "slug"
+    t.integer  "news_hero_image_id"
   end
 
   add_index "refinery_news_items", ["id"], :name => "index_refinery_news_items_on_id"
