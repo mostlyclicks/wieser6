@@ -14,11 +14,11 @@ Refinery::PagesController.class_eval do
 			@project_for_home = Refinery::Projects::Project.first
 			@testimonial = @projects_for_home.sample
 			@random_project = @projects_for_home.sample
-<<<<<<< HEAD
+# <<<<<<< HEAD
 			@news_item = (Refinery::News::Item.first)
-=======
-			@news_item = (Refinery::News::Item.last)
->>>>>>> news-homepage
+# =======
+# 			@news_item = (Refinery::News::Item.last)
+# >>>>>>> news-homepage
 		end
 
 		#def load_random_testimonial
