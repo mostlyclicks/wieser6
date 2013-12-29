@@ -1,4 +1,4 @@
-Refinery::PagesController.class_eval do
+Refinery::SearchController.class_eval do
 	#include Refinery::Project::ControllerHelper
 	before_filter :find_archived_projects
 	before_filter :list_of_projects

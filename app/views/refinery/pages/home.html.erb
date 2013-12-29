@@ -64,9 +64,9 @@
     <%#= image_fu(@news_item.news_image, '357x140#c') %>
 
     <%#= image_tag(@news_item.image_id.thumbnail('100x100').url) %>
-    <%#= image_fu(@news_item.image_id, '100x100#c') %>
+    <%= image_fu(@news_item.news_hero_image, '357x140#c') %>
 <h3>
-    <%= @news_item.title %>
+    <i class="icon-chevron-right"></i> <%= link_to @news_item.title, news_item_path(@news_item) %>
     <%#= image_fu(@news_item.title
 		<i class="icon-chevron-right"></i> <%= link_to 'Green Initiatives', '/green-initiatives' %></h3>
 	</div>

@@ -22,7 +22,8 @@ a {color:$wieser_green;}
 		line-height:75px;
 		color:$wieser_green;
 		text-shadow:none;
-		font-size:16px;
+		font-family:helvetica, arial, sans-serif !important;
+		font-size:17px;
 		&:hover {
 			color:darken($white, 22%);
 		}

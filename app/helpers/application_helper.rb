@@ -12,4 +12,26 @@ module ApplicationHelper
 	#		tag.name
 	#	end
 	#end
+
+	def testimonial_check(t)
+		unless t.title && t.testimonial
+			"<div id=\"quotebox-l2\">
+			<strong>#{t.title}</strong>
+			 #{t.testimonial}
+			 </div>"
+		end
+	end
+
+  def featured_project_check(p)
+    if p
+    "<div id=\"featured-project\">
+    <h6>Featured project</h6>
+    <h4>#{raw p.title}</h4>
+     #{image_fu(p.hero_image)}
+    </div>"
+    end
+  end
+
+
+
 end

@@ -31,13 +31,16 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 
  html, body {margin:0;padding:0;background-color:$light_gray;}
 
- h1 {font-family:'Impact W15 2010';}
+ h1 {font-family:helvetica, arial, sans-serif !important;}
+ #body_content_title {color:$dark_gray !important;font-weight:100 !important;}
+ h3 {font-family:helvetica, arial, sans-serif !important;font-size:18pt !important; font-weight:100 !important;}
 
  #header-row {
  	
  	background-color:$light_gray;
  	height:120px;
  	
+
 
  }
 
@@ -86,6 +89,11 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
  	background-image:url('footer-bg6.png');
  	background-position:right;
  	background-repeat:no-repeat;
+ 	border-top:1px dotted #cdcdcd;
+
+
+	
+
 
 
 
@@ -168,13 +176,15 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 	background-color:$slate_blue;
 	opacity:0.7;
 	background:url('trans-quote.png') no-repeat -11px -6px $slate_blue;
+	margin-bottom:20px;
 }
 
 #featured-project {
 	padding:5px 20px 20px 20px;
-	margin:20px 0 20px 0;
+	margin:0px 0 20px 0;
 	border-radius:3px;
 	background-color:$light_gray;
+	border:1px dotted lighten($dark_gray, 42%);
 }
 
 #l2-main {
@@ -183,7 +193,7 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 	margin-bottom:40px;
 }
 
-#sidebar {margin-top:82px;}
+#sidebar {margin-top:104px;}
 
 .home-buckets {
 	background-color:$white;
@@ -203,7 +213,7 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 		height:130px;
 		margin:0;
 	} h1 {
-		
+		font-family:'Impact W15 2010' !important;
 		
 	}
 
@@ -282,6 +292,6 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 }
 
 
-#l2-main h1 {
-	color:$light_gray - 40;
-}
+// #l2-main h1 {
+// 	color:$light_gray - 40;
+// }

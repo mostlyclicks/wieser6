@@ -1,0 +1,35 @@
+<% content_for :body_content_title do %>
+  <%= t('.search_results_for', :what => params[:query]) %>
+<% end %>
+
+<% content_for :body do %>
+  <% if @results.empty? %>
+    <%= t('.no_results_for', :what => params[:query]) %>
+  <% else %>
+    <ul id="search_results">
+      <% @results.each do |result| %>
+        <li>
+          <span class='result_type'>
+            <%#= result_type result %>
+          </span>
+          <%= link_to result_title(result).html_safe, result_url(result) %><br />
+          <%#= result_ %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<div class="row-fluid">
+  <div class="span8" id="l2-main"><%= render :partial => "/refinery/content_page" %></div>
+    <div class="span4" id="sidebar" style="">
+      <%= testimonial_check(@testimonial) %>
+      <div id="featured-project">
+        <h6>Featured project</h6>
+        <h4><%= raw @random_project.title %></h4>
+        <%= image_fu(@random_project.hero_image) %>
+      </div>
+    </div>
+  </div>
+</div>

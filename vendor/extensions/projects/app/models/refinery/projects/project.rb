@@ -18,7 +18,7 @@ module Refinery
       has_many_page_images
 
       acts_as_taggable
-      acts_as_indexed :fields => [:title, :description]
+      acts_as_indexed :fields => [:title, :description, :tags]
     end
   end
 end
