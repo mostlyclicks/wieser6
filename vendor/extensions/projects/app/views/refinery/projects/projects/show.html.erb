@@ -7,7 +7,7 @@
 </div>
 <div class="row-fluid" id="l2-main">
   <div class="span7">
-    <h2><%= raw @project.title %></h2>
+    <h1 id="body_content_title"><%= raw @project.title %></h1>
     <small><%= raw @project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %></small>
     <p><%= raw @project.description %></p>
 

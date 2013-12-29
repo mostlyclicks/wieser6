@@ -34,7 +34,7 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
  h1 {font-family:helvetica, arial, sans-serif !important;}
  #body_content_title {color:$dark_gray !important;font-weight:100 !important;}
  h3 {font-family:helvetica, arial, sans-serif !important;font-size:18pt !important; font-weight:100 !important;}
-
+ h4 {font-weight:100 !important;}
  #header-row {
  	
  	background-color:$light_gray;
@@ -228,16 +228,24 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 	padding:0;
 	li {
 		display:block;
+		text-align:center;
+		border:1px dotted lighten($dark_gray, 40%);
 		float:left;
-		height:200px;
-		width:150px;
-		margin-right:20px;
+		height:220px;
+		// width:150px;
+		// margin-right:20px;
+		padding:10px;
 		margin-bottom:10px;
 		clear:right;
+		background-color:$light_gray;
 		
 		h5 {
 			font-size:12px;
 			line-height: 14px;
+			font-weight:100;
+		}
+		img {
+			border:1px solid lighten(#000000, 70%);
 		}
 	} 
 }

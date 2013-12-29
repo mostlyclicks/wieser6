@@ -26,7 +26,7 @@ module ApplicationHelper
     if p
     "<div id=\"featured-project\">
     <h6>Featured project</h6>
-    <h4>#{raw p.title}</h4>
+    <h4>#{link_to (raw p.title), refinery.projects_project_path(p)}</h4>
      #{image_fu(p.hero_image)}
     </div>"
     end
