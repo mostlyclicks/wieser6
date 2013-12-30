@@ -1,18 +1,22 @@
-<div class="row-fluid" id="l2-main">
-  <div class="span9" style="border-right:1px solid #636363;">
-    <h2>Archived Projects</h2>
-    <ul id="project-gallery">
-      <% @archived_projects.each do |project| %>
-        <li>
-          <%= image_fu(project.hero_image, '150x150#c') %>
-          <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
-        </li>
-      <% end %>
-    </ul>
+<div class="row-fluid">
+  <div class="span8" id="l2-main">
+    <h1 id="body_content_title">Archived Projects</h1>
+    <div class="row-fluid">
+      <ul id="project-gallery">
+        <% @archived_projects.each do |project| %>
+          <li>
+            <%= image_fu(project.hero_image, '150x150#c') %>
+            <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-  <div class="span3">
-    <p><%= link_to 'Completed Projects', refinery.projects_root_path %></p>
+
+  <div class="span4" id="sidebar">
+    <p><%= link_to 'Current Projects', refinery.projects_root_path %></p>
     <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
     
   </div>
+
 </div>

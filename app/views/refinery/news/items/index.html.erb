@@ -3,15 +3,25 @@
 
   <% if @items.any? %>
     <% @items.each do |item| %>
+    <div class="row-fluid" style="border-top:1px dotted #cdcdcd;padding-top:20px;">
       <article class="news_item_truncated">
-        <h2><%= link_to item.title, refinery.news_item_path(item) %></h2>
-        <p>
-          <small><%= t('.published') %> <%= l(item.publish_date, :format => :long) %></small>
-        </p>
-        <%= truncate  item.body, :length => 200,
+        
+          <div class="span3"><%= image_fu(item.news_hero_image, '200x125#c') %></div>
+          <div class="span9" >
+            <h3 style="margin-top:0;padding:0;"><%= link_to item.title, refinery.news_item_path(item) %></h3>
+            <p style="margin-top:-1em;">
+            <small><%= t('.published') %> <%= l(item.publish_date, :format => :long) %></small>
+            </p>
+            <%= truncate  item.body, :length => 200,
                       :omission => " ... #{link_to t('.read_more'), refinery.news_item_path(item)}",
                       :preserve_html_tags => true %>
+
+          </div>
+          
       </article>
+    </div>
+        
+        
     <% end %>
 
     <%= will_paginate @items %>
@@ -23,6 +33,19 @@
 <% content_for :body_content_right_prepend do -%>
   <%= raw @page.content_for(::Refinery::Pages.default_parts.second.to_sym) %>
 <% end if ::Refinery::Pages.default_parts.many? -%>
-<%= render :partial => '/refinery/news/shared/body_content_right' %>
 
-<%= render :partial => "/refinery/content_page" %>
+
+
+<div class="row-fluid">
+  <div class="span8" id="l2-main">
+    <%= render :partial => "/refinery/content_page" %>
+  </div>
+  <div class="span4" id="sidebar">
+    <%= render :partial => '/refinery/news/shared/body_content_right' %>
+    <%= testimonial_check(@testimonial) %>
+    <%= raw featured_project_check(@random_project) %>
+  </div>
+</div>
+
+
+

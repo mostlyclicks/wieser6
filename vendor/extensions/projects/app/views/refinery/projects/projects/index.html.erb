@@ -16,8 +16,12 @@
   </div>
   </div>
   <div class="span4" id="sidebar" style="border-left:1px dotted #636363;padding-left:20px;">
-    <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
-    <p><%= link_to 'Archived Projects', refinery.projects_projects_archived_path %></p>
+    <% if @completed_projects.length > 0 %>
+      <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
+    <% end %>
+    <% if @archived_projects.length > 0 %>  
+      <p><%= link_to 'Archived Projects', refinery.projects_projects_archived_path %></p>
+    <% end %>
     <p>
 
       <style>
