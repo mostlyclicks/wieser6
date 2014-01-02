@@ -1,5 +1,5 @@
 <%# content_for :body_content_title do %>
-  <%= t('.search_results_for', :what => params[:query]) %>
+  
   <!-- test -->
 <%# end %>
 
@@ -7,6 +7,7 @@
   <% if @results.empty? %>
     <%= t('.no_results_for', :what => params[:query]) %>
   <% else %>
+  <h1 id="body_content_title"><%= t('.search_results_for', :what => params[:query]) %></h1>
     <ul id="search_results">
       <% @results.each do |result| %>
         <li>
