@@ -1,15 +1,12 @@
 <div class="row-fluid" id="">
   <div class="span8" id="l2-main">
     <h1 id="body_content_title">Projects</h1>
-    <div class="row-fluid">
+    <div class="">
     <ul id="project-gallery-index">
       <% @projects.each do |project| %>
         <li class="span3">
           <%= image_fu(project.hero_image, '150x150#c') %>
           <h5><%= link_to project.title, refinery.projects_project_path(project) %></h5>
-          <!-- <small>
-            <%#= raw project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %>
-          </small> -->
         </li>
       <% end %>
     </ul>

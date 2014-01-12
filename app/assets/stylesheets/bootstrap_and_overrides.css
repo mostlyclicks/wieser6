@@ -40,6 +40,7 @@
 	.carousel-indicators {top:5px !important;}
 
 	#home-bucket-section {margin-top:110px;}
+	#project-gallery-index li.span3 {width:46%;}
 
 
 
@@ -66,6 +67,7 @@
 	#quotebox h4 {margin-top:0px;}
 	#quotebox p {font-size:14px;}
 	.carousel-indicators {top:4px !important;}
+	#project-gallery-index li.span3 {width:46%;}
 
 	#home-bucket-section {margin-top:110px;}
 	#quotebox h1 {font-size:24px;font-family:helvetica, arial, sans-serif;font-weight:normal;}
@@ -80,6 +82,8 @@
 	#home-bucket-section {margin-top:100px;}
 	#quotebox {width:100%;display:block;float:left;margin-top:100px;border-radius:0px;}
 	#quotebox h4 {margin-top:40px;}
+	#project-gallery-index ul {margin:0 auto;}
+	#project-gallery-index li.span3 {width:46%;}
 	.brand {width:50%;}
 	.carousel-inner {height:140px !important;}
  }
