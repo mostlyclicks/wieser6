@@ -1,37 +1,30 @@
  
 <% content_for :intro do %>
-<div id="myCarousel" class="carousel slide carousel-fade">
-  
+<div id="myCarousel" class="carousel slide carousel-fade hidden-phone">
   <ol class="carousel-indicators">
     <% @projects_for_home.each_with_index do |p, index| %>
     <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
     <% end %>
   </ol> 
   
-<div class="carousel-inner">
-
-<% @projects_for_home.each_with_index do |p, index| %>
-<div class="<% if index == 0 %>active<% end %> item">
-  
-    <div id="intro" style="padding-top:20px;padding-bottom:70px;background-color:#13211c;">
+<div class="carousel-inner hidden-phone">
+  <% @projects_for_home.each_with_index do |p, index| %>
+    <div class="<% if index == 0 %>active<% end %> item">
+      <div id="intro" style="padding-top:20px;padding-bottom:70px;background-color:#13211c;">
       <!-- load image here for phone and tablet -->
-      <%= link_to (image_fu p.hero_image, '1200x600c', id: 'big-image', class: 'hidden-desktop'), refinery.projects_project_path(p) %>
-      <div class="container home-hero">
-    		<div class="row-fluid">
-    			<div class="span4 offset87" id="quotebox" >
-            <h2><i class="icon-chevron-right"></i> <%= link_to p.title, refinery.projects_project_path(p) %></h2>
-      			<div class="hidden-phone"><p><%#= raw p.testimonial %></p></div>
-    			</div>
-    		</div>
-      </div>
+        <%= link_to (image_fu p.hero_image, '1200x600c', id: 'big-image', class: 'hidden-desktop'), refinery.projects_project_path(p) %>
+        <div class="container home-hero">
+      		<div class="row-fluid">
+      			<div class="span4 offset87" id="quotebox" >
+              <h2><i class="icon-chevron-right"></i> <%= link_to p.title, refinery.projects_project_path(p) %></h2>
+        			<div class="hidden-phone"><p><%#= raw p.testimonial %></p></div>
+      			</div>
+      		</div>
+        </div>
       <!-- load image here for desktop - hide for phone and tablet -->
-
       <%= link_to (image_fu p.hero_image, '1170x500c', id: 'big-image', class: 'hidden-phone hidden-tablet'), refinery.projects_project_path(p)  %>
-      <!-- img src="http://placehold.it/1170x500" id="big-image" / -->
-
+      </div>
     </div>
-  
-</div>
 <% end %>
 
 
@@ -47,7 +40,7 @@
 
 <div class="row-fluid" id="home-bucket-section">
 
-<div class="row-fluid home-buckets" style="margin-top:-50px;position:relative;z-index:1000;">
+<div class="row-fluid home-buckets" style="">
 	<div class="span12" style="padding:20px;">
 	<div class="span4">
 		<h1>Trust<br />Partnership<br />Excellence</h1>

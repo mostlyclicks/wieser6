@@ -27,7 +27,7 @@
 	footer input {width:100%;}
 	.btn {margin-top:10px;}
 
-	#intro #big-image {display:block;position:static;margin-top:0px;z-index:1002;width:100%;margin:0 auto 0 auto;}
+	/*#intro #big-image {display:block;position:static;margin-top:0px;z-index:1002;width:100%;margin:0 auto 0 auto;}*/
 
 	.home-hero .span4 {width:100%;display:block;}
 	.home-hero .row-fluid .offset8:first-child {margin-left:0%;}
@@ -86,4 +86,25 @@
 	#project-gallery-index li.span3 {width:46%;}
 	.brand {width:50%;}
 	.carousel-inner {height:140px !important;}
+	#sidebar {width:100%;border:none;padding:0;margin:none;}
+	.brand img {background-image:none !important;margin-left:0px;padding-left:0;}
+	#header-row {height:85px;}
+	 a.brand {height:66px;margin-left:-20px;margin-top:-11px !important;
+	 	text-decoration: none;outline:none;background-color:none !important;}
+	 nav ul {opacity:1.0 !important;z-index: 20000;}
+	/* .navbar .nav > li {
+z-index: 100001;
+}*/
+	 nav li a {height:44px;color:#ffffff !important;
+	 		border:1px solid #a1a1a1;
+	 		line-height:44px;padding:0;background-color:#004a30;opacity:1.0 !important;z-index:1000 !important;}
+	 nav li a:hover {background-color:#ffffff !important;}
+	 .home-buckets {position:static;z-index:1;}
+	 /*.nav-collapse .collapse {z-index:15000;border:1px solid red !important;}*/
  }
+
+
+
+
+
+
