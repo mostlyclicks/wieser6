@@ -168,8 +168,6 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 		font-style:normal;
 		font-family:sans-serif;
 	}
-	
-	
 }
 
 
@@ -183,7 +181,10 @@ a:hover {background-color:transparent !important;color:$wieser_green !important;
 	background:url('trans-quote.png') no-repeat -11px -6px $slate_blue;
 	margin-bottom:20px;
 	color:#000000;
-	h3 {margin-top:0;line-height:1em;text-shadow:1px 0px 0px #cdcdcd;color:#000000 !important;}
+	border:1px solid darken($slate_blue, 10%);
+	box-shadow:1px 1px 5px 1px lighten($dark_gray, 15%);
+	h4 {margin-top:0;line-height:1em;text-shadow:0px 0px 0px #cdcdcd;color:#000000 !important;}
+
 }
 
 #featured-project {
