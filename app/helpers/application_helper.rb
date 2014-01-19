@@ -16,7 +16,7 @@ module ApplicationHelper
 	def testimonial_check(t)
 		if t
 			"<div id=\"quotebox-l2\">
-			<h4>#{t.title}asd</h4>
+			<h4>#{t.title}</h4>
 			 #{t.testimonial}
 			 </div>"
 		end
