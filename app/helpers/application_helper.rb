@@ -14,7 +14,7 @@ module ApplicationHelper
 	#end
 
 	def testimonial_check(t)
-		if t
+		unless t.testimonial.empty?
 			"<div id=\"quotebox-l2\">
 			<h4>#{t.title}</h4>
 			 #{t.testimonial}
