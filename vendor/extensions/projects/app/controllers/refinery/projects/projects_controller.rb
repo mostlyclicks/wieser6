@@ -13,7 +13,7 @@ module Refinery
         if params[:tag]
           @projects = Project.tagged_with(params[:tag])
         else
-          @projects = Project.all
+          @projects = Project.where project_status: "2"
         end
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @project in the line below:
@@ -61,7 +61,7 @@ module Refinery
 
       def find_all_projects
         #@projects = Project.order('position ASC')
-        @projects = Project.where project_status: "1"
+        @projects = Project.where project_status: "2"
       end
 
       def find_page

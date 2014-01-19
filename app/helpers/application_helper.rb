@@ -14,7 +14,7 @@ module ApplicationHelper
 	#end
 
 	def testimonial_check(t)
-		if t.title && t.testimonial
+		if t
 			"<div id=\"quotebox-l2\">
 			<h4>#{t.title}</h4>
 			 #{t.testimonial}
@@ -32,6 +32,9 @@ module ApplicationHelper
     end
   end
 
+  def test_helper
+    "<h1>Hello</h1>"
+  end
 
 
 end

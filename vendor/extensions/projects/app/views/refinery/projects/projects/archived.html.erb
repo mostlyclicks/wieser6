@@ -2,11 +2,11 @@
   <div class="span8" id="l2-main">
     <h1 id="body_content_title">Archived Projects</h1>
     <div class="row-fluid">
-      <ul id="project-gallery">
+      <ul id="project-gallery-index">
         <% @archived_projects.each do |project| %>
-          <li>
+          <li class="span3">
             <%= image_fu(project.hero_image, '150x150#c') %>
-            <h4><%= link_to project.title, refinery.projects_project_path(project) %></h4>
+            <h5><%= link_to project.title, refinery.projects_project_path(project) %></h5>
           </li>
         <% end %>
       </ul>
@@ -14,8 +14,22 @@
   </div>
 
   <div class="span4" id="sidebar">
-    <p><%= link_to 'Current Projects', refinery.projects_root_path %></p>
-    <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
+      <%= raw testimonial_check(@testimonial) %>
+      <%#= raw test_helper %>
+      <%= raw featured_project_check(@random_project) %>
+    <p><%= button_to 'Completed Projects', refinery.projects_projects_path, :class => 'btn btn-default span12' %></p>
+    <p>
+      <h4>Tags:</h4>
+      <% len = @tags.length %>
+      <% @tags.each_with_index do |t, index| %>
+        <% unless len == index+1 %>
+          <%= (link_to t.name, refinery.projects_tag_path(t.name)) + (', ')  %>
+        <% else %>
+          <%= link_to t.name, refinery.projects_tag_path(t.name)  %>
+        <% end %>        
+      <% end %>
+
+    </p>
     
   </div>
 

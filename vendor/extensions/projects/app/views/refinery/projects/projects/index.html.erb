@@ -13,11 +13,14 @@
   </div>
   </div>
   <div class="span4" id="sidebar" style="">
-    <% if @completed_projects.length > 0 %>
-      <p><%= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
-    <% end %>
+    <%= raw testimonial_check(@testimonial) %>
+      <%#= raw test_helper %>
+      <%= raw featured_project_check(@random_project) %>
+   <!--  <%# if @completed_projects.length > 0 %>
+      <p><%#= link_to 'Completed Projects', refinery.projects_projects_completed_path %></p>
+    <%# end %> -->
     <% if @archived_projects.length > 0 %>  
-      <p><%= link_to 'Archived Projects', refinery.projects_projects_archived_path %></p>
+      <p><%= button_to 'Archived Projects', refinery.projects_projects_archived_path, :class => 'btn btn-default span12' %></p>
     <% end %>
     <p>
 
