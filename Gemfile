@@ -7,6 +7,7 @@ gem 'refinerycms-menus', '~> 2.0.7'
 gem 'twitter-bootstrap-rails'
 gem 'fog'
 gem 'unicorn'
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
