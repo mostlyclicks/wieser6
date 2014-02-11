@@ -41,6 +41,7 @@
     <%= render :partial => "/refinery/content_page" %>
   </div>
   <div class="span4" id="sidebar">
+    <%= render '/shared/callout' %>
     <%= render :partial => '/refinery/news/shared/body_content_right' %>
     <%= raw testimonial_check(@testimonial) %>
     <%#= raw test_helper %>

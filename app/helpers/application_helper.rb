@@ -25,7 +25,7 @@ module ApplicationHelper
   def featured_project_check(p)
     if p
     "<div id=\"featured-project\">
-    <h6>Featured project</h6>
+    
     <h4>#{link_to (raw p.title), refinery.projects_project_path(p)}</h4>
      #{image_fu(p.hero_image)}
     </div>"

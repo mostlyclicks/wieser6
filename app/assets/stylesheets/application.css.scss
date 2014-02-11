@@ -105,7 +105,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', end
  	}
  }
  
-
  footer {
  	
 	width:100%;
@@ -114,12 +113,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', end
  	background-position:right;
  	background-repeat:no-repeat;
  	border-top:1px dotted #cdcdcd;
-
-
-	
-
-
-
 
  	#email-sign-up {
 		background-color:#bababa;
@@ -163,6 +156,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', end
 	z-index:2011;
 	bottom:0px;
 	left:0;
+}
+
+.callout {
+
+	
+	
+	min-height:100px;
+	margin-bottom:20px;
+	padding:20px;
+	border-radius:5px;
+	border:1px dotted lighten($dark_gray, 30%);
+	background:url('blueprint.png') 110% 145% no-repeat lighten(#efefef, 4%);
+	background-size:170px;
+
+
+
+
+	// box-shadow:1px 1px 5px 1px lighten($dark_gray, 50%);
+	h3 {
+		color:$wieser_green;
+		font-family: 'helvetica-neue', sans-serif;
+		font-weight:100;
+		margin-top:0;
+		//font-size:32px !important;
+	}
+	p {
+		color:rgba(0,0,0,.7);
+		strong {
+			color:rgba(0,0,0,.65);
+			font-size:115%;
+			line-height:1.5em;
+			a {color:rgba(0,0,0,.65);}
+
+		}
+	}
 }
 
 #quotebox {
