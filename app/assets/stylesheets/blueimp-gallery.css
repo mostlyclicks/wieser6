@@ -28,7 +28,7 @@
 }
 .blueimp-gallery {
   position: fixed;
-  z-index: 9999;
+  z-index: 9999; /*9999*/
   overflow: hidden;
   background: #000;
   background: rgba(0, 0, 0, 0.9);
