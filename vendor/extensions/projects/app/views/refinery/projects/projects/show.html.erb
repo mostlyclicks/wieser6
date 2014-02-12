@@ -10,7 +10,7 @@
     <h1 id="body_content_title"><%= raw @project.title %></h1>
     <small><%= raw @project.tag_list.map { |t| link_to t, refinery.projects_tag_path(t)}.join(', ') %></small>
     <p><%= raw @project.description %></p>
-    <p><%= refinery.@project.pdf_file_id %></p>
+    <p><%#= refinery.@project.pdf_file_id %></p>
 
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
       <div class="slides"></div>
