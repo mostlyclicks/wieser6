@@ -1,6 +1,6 @@
  
 <% content_for :intro do %>
-<div id="myCarousel" class="carousel slide carousel-fade hidden-phone">
+<div id="myCarousel" class="carousel slide carousel-fade hidden-phone" style="margin-top:40px;">
   <ol class="carousel-indicators">
     <% @projects_for_home.each_with_index do |p, index| %>
     <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
