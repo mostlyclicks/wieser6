@@ -79,6 +79,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', end
 
  	}
 
+ .navbar-inner .nav li a {
+ 	border-radius:5px;
+ 	height:20px;
+ 	line-height:0px;
+ }
+
+ .navbar-inner .nav li a {
+ 	margin-top:30px;
+ 	line-height:20px !important;
+ }
+
+ .navbar-inner .nav li a:hover {
+ 	background-color:lighten($wieser_green, 10%) !important;
+ 	color:$white !important;
+ 	text-decoration:underline;
+
+ }
+
  //#home div > div[id] > div {width:940px;border:1px solid black;margin:0 auto;}
  #intro {
  	position:relative;
