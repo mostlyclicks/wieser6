@@ -2,7 +2,22 @@
 <h1 id="body_content_title">Contact Us</h1>
 
 
-<%= render 'form' %>
+<div class="row">
+  <div class="span8">
+    <%= render 'form' %>
+    <hr>
+    
+    
+      <h1 id="body_content_title">Map</h1>
+      <iframe width="750" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wieser+Brothers+Gen+Contractor+Inc,+Twilight+Street,+La+Crescent,+MN&amp;aq=0&amp;oq=wieser+brother&amp;sll=44.900771,-89.56949&amp;sspn=16.291688,31.113281&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=43.824326,-91.288555&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Wieser+Brothers+Gen+Contractor+Inc,+Twilight+Street,+La+Crescent,+MN&amp;aq=0&amp;oq=wieser+brother&amp;sll=44.900771,-89.56949&amp;sspn=16.291688,31.113281&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=43.824326,-91.288555&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small></div>
+
+  
+  <div class="span4">
+    <%= render 'shared/callout' %>
+    <%= render 'shared/contact_info' %>
+  </div>
+  
+</div>
 
 <%#= link_to 'Back', contacts_path %>
 </div>
